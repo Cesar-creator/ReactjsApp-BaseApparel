@@ -35,7 +35,7 @@ export const AppApparel = () => {
                 <form onSubmit={handleSubmit}>
                     <label for="Email">Email Address</label>
 
-                    <input name='Email' id="Email" value={email} type="text" placeholder="Email Address" autoFocus onChange={handleChange} className={`${error ? 'error' : null}`} />
+                    <input name='Email' id="Email" value={email} type="text" placeholder="Email Address" autoFocus autoComplete='off' onChange={handleChange} className={`${error ? 'error' : null}`} />
 
                     <img src={iconError} className={`${error ? 'error-icon' : 'error-ocult'}`} alt="" />
 
